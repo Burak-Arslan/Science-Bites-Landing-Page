@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
           </div>
 
           {/* Content Sections */}
-          <div className="space-y-10 text-gray-300 leading-7">
+          <div className="space-y-14 text-gray-300 leading-7">
 
             {/* Introduction */}
             <section>
