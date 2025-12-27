@@ -19,10 +19,18 @@ export const metadata: Metadata = {
   description: "Science Bites ile bilimi eğlenceli ve kolay bir şekilde keşfedin. Yakında sizlerle!",
   keywords: ["science", "bilim", "eğitim", "science bites"],
   authors: [{ name: "Science Bites" }],
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "Science Bites - Bilimi Keşfet",
     description: "Science Bites ile bilimi eğlenceli ve kolay bir şekilde keşfedin.",
     type: "website",
+    images: ["/icon-512.png"],
   },
 };
 
