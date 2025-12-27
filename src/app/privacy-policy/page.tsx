@@ -36,12 +36,9 @@ export default function PrivacyPolicy() {
 
           {/* Title - Centered */}
           <div style={{ textAlign: "center", marginBottom: "64px" }}>
-            <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-bold" style={{ marginBottom: "12px" }}>
+            <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-bold">
               Privacy Policy
             </h1>
-            <p className="text-gray-500">
-              Last updated: December 28, 2024
-            </p>
           </div>
 
           {/* Content */}
