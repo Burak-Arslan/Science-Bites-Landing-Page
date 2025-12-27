@@ -10,7 +10,7 @@ export default function Terms() {
     <div className="min-h-screen bg-[#0a0a0a] text-white">
       {/* Header */}
       <header className="border-b border-white/10">
-        <div className="max-w-3xl mx-auto px-6 py-5 flex justify-between items-center">
+        <div className="max-w-2xl mx-auto px-8 py-5 flex justify-between items-center">
           <Link
             href="/"
             className="font-[family-name:var(--font-playfair)] text-xl font-semibold hover:text-purple-400 transition-colors"
@@ -27,24 +27,26 @@ export default function Terms() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-3xl mx-auto px-6 py-16 text-center">
-        {/* Title */}
-        <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-bold mb-2">
-          Terms of Service
-        </h1>
-        <p className="text-gray-500 mb-20">
-          Last updated: December 28, 2024
-        </p>
+      <main className="max-w-2xl mx-auto px-8 py-16">
+        {/* Title - Centered */}
+        <div className="text-center mb-16">
+          <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-bold mb-3">
+            Terms of Service
+          </h1>
+          <p className="text-gray-500">
+            Last updated: December 28, 2024
+          </p>
+        </div>
 
-        {/* Content */}
-        <div className="text-left">
+        {/* Content - Left aligned */}
+        <div className="space-y-16">
 
           {/* 1. Acceptance */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               1. Acceptance of Terms
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-3">
+            <p className="text-gray-400 leading-relaxed mb-4">
               By accessing or using the Science Bites mobile application or website, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
             </p>
             <p className="text-gray-400 leading-relaxed">
@@ -52,16 +54,15 @@ export default function Terms() {
             </p>
           </section>
 
-
           {/* 2. Service Description */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               2. Service Description
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-4">
+            <p className="text-gray-400 leading-relaxed mb-6">
               Science Bites is an educational platform designed to make science fun and accessible for children and families. Our services include:
             </p>
-            <div className="space-y-3">
+            <div className="space-y-4">
               <div>
                 <h3 className="text-white font-medium">Interactive Lessons</h3>
                 <p className="text-gray-400">Engaging science lessons designed for young learners with visual content.</p>
@@ -81,16 +82,15 @@ export default function Terms() {
             </div>
           </section>
 
-
           {/* 3. User Accounts */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               3. User Accounts
             </h2>
             <p className="text-gray-400 leading-relaxed mb-4">
               When creating an account, you agree to:
             </p>
-            <ul className="text-gray-400 space-y-2 pl-6">
+            <ul className="text-gray-400 space-y-2 ml-6">
               <li>• Provide accurate and complete information during registration</li>
               <li>• Maintain the security of your account credentials</li>
               <li>• Accept responsibility for all activities under your account</li>
@@ -99,16 +99,15 @@ export default function Terms() {
             </ul>
           </section>
 
-
           {/* 4. Acceptable Use */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               4. Acceptable Use
             </h2>
             <p className="text-gray-400 leading-relaxed mb-4">
               You agree not to:
             </p>
-            <ul className="text-gray-400 space-y-2 pl-6">
+            <ul className="text-gray-400 space-y-2 ml-6">
               <li>• Use our services for any illegal or unauthorized purpose</li>
               <li>• Attempt to hack, reverse engineer, or compromise our systems</li>
               <li>• Share, copy, or distribute our content without permission</li>
@@ -118,13 +117,12 @@ export default function Terms() {
             </ul>
           </section>
 
-
           {/* 5. Intellectual Property */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               5. Intellectual Property
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-3">
+            <p className="text-gray-400 leading-relaxed mb-4">
               All content on Science Bites, including but not limited to text, graphics, logos, images, videos, animations, and software, is the property of Science Bites or its content suppliers and is protected by copyright and intellectual property laws.
             </p>
             <p className="text-gray-400 leading-relaxed">
@@ -132,51 +130,47 @@ export default function Terms() {
             </p>
           </section>
 
-
           {/* 6. Subscriptions */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               6. Subscriptions & Payments
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-4">
+            <p className="text-gray-400 leading-relaxed mb-6">
               For premium features:
             </p>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left">
-                <tbody className="text-gray-400">
-                  <tr className="border-b border-white/5">
-                    <td className="py-3 pr-8 font-medium text-white">Billing</td>
-                    <td className="py-3">Processed through App Store or Google Play</td>
-                  </tr>
-                  <tr className="border-b border-white/5">
-                    <td className="py-3 pr-8 font-medium text-white">Auto-Renewal</td>
-                    <td className="py-3">Subscriptions renew automatically unless cancelled</td>
-                  </tr>
-                  <tr className="border-b border-white/5">
-                    <td className="py-3 pr-8 font-medium text-white">Cancellation</td>
-                    <td className="py-3">Cancel anytime through your app store settings</td>
-                  </tr>
-                  <tr>
-                    <td className="py-3 pr-8 font-medium text-white">Refunds</td>
-                    <td className="py-3">Subject to app store refund policies</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <table className="w-full">
+              <tbody className="text-gray-400">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 pr-8 font-medium text-white">Billing</td>
+                  <td className="py-3">Processed through App Store or Google Play</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 pr-8 font-medium text-white">Auto-Renewal</td>
+                  <td className="py-3">Subscriptions renew automatically unless cancelled</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 pr-8 font-medium text-white">Cancellation</td>
+                  <td className="py-3">Cancel anytime through your app store settings</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-8 font-medium text-white">Refunds</td>
+                  <td className="py-3">Subject to app store refund policies</td>
+                </tr>
+              </tbody>
+            </table>
           </section>
 
-
           {/* 7. Disclaimer */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               7. Disclaimer of Warranties
             </h2>
-            <div className="bg-amber-500/10 border-l-4 border-amber-500 p-4 mb-4">
+            <div className="bg-amber-500/10 border-l-4 border-amber-500 p-4 mb-6">
               <p className="text-amber-200">
                 <strong>Important:</strong> Science Bites is provided &quot;as is&quot; without warranties of any kind, either express or implied.
               </p>
             </div>
-            <p className="text-gray-400 leading-relaxed mb-3">
+            <p className="text-gray-400 leading-relaxed mb-4">
               We do not guarantee that our services will be uninterrupted, error-free, or completely secure. Educational content is provided for informational purposes and should not replace professional advice.
             </p>
             <p className="text-gray-400 leading-relaxed">
@@ -184,13 +178,12 @@ export default function Terms() {
             </p>
           </section>
 
-
           {/* 8. Limitation of Liability */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               8. Limitation of Liability
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-3">
+            <p className="text-gray-400 leading-relaxed mb-4">
               To the maximum extent permitted by law, Science Bites and its affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our services.
             </p>
             <p className="text-gray-400 leading-relaxed">
@@ -198,13 +191,12 @@ export default function Terms() {
             </p>
           </section>
 
-
           {/* 9. Termination */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               9. Termination
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-3">
+            <p className="text-gray-400 leading-relaxed mb-4">
               We reserve the right to suspend or terminate your account at any time for violation of these terms or for any other reason at our sole discretion.
             </p>
             <p className="text-gray-400 leading-relaxed">
@@ -212,13 +204,12 @@ export default function Terms() {
             </p>
           </section>
 
-
           {/* 10. Governing Law */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               10. Governing Law
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-3">
+            <p className="text-gray-400 leading-relaxed mb-4">
               These Terms of Service shall be governed by and construed in accordance with the laws of Turkey, without regard to its conflict of law provisions.
             </p>
             <p className="text-gray-400 leading-relaxed">
@@ -226,9 +217,8 @@ export default function Terms() {
             </p>
           </section>
 
-
           {/* 11. Contact */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               11. Contact Us
             </h2>
@@ -248,7 +238,7 @@ export default function Terms() {
 
       {/* Footer */}
       <footer className="border-t border-white/10">
-        <div className="max-w-3xl mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="max-w-2xl mx-auto px-8 py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
             © {new Date().getFullYear()} Science Bites. All rights reserved.
           </p>

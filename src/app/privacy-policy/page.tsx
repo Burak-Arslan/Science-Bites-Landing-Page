@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
     <div className="min-h-screen bg-[#0a0a0a] text-white">
       {/* Header */}
       <header className="border-b border-white/10">
-        <div className="max-w-3xl mx-auto px-6 py-5 flex justify-between items-center">
+        <div className="max-w-2xl mx-auto px-8 py-5 flex justify-between items-center">
           <Link
             href="/"
             className="font-[family-name:var(--font-playfair)] text-xl font-semibold hover:text-purple-400 transition-colors"
@@ -27,24 +27,26 @@ export default function PrivacyPolicy() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-3xl mx-auto px-6 py-16 text-center">
-        {/* Title */}
-        <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-bold mb-2">
-          Privacy Policy
-        </h1>
-        <p className="text-gray-500 mb-20">
-          Last updated: December 28, 2024
-        </p>
+      <main className="max-w-2xl mx-auto px-8 py-16">
+        {/* Title - Centered */}
+        <div className="text-center mb-16">
+          <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-bold mb-3">
+            Privacy Policy
+          </h1>
+          <p className="text-gray-500">
+            Last updated: December 28, 2024
+          </p>
+        </div>
 
-        {/* Content */}
-        <div className="text-left">
+        {/* Content - Left aligned */}
+        <div className="space-y-16">
 
           {/* 1. Introduction */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               1. Introduction
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-3">
+            <p className="text-gray-400 leading-relaxed mb-4">
               Welcome to Science Bites. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website.
             </p>
             <p className="text-gray-400 leading-relaxed">
@@ -52,16 +54,15 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-
           {/* 2. Information We Collect */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               2. Information We Collect
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-4">
+            <p className="text-gray-400 leading-relaxed mb-6">
               We collect several types of information to provide and improve our services:
             </p>
-            <div className="space-y-3">
+            <div className="space-y-4">
               <div>
                 <h3 className="text-white font-medium">Personal Information</h3>
                 <p className="text-gray-400">Name, email address, and profile information when you create an account.</p>
@@ -81,16 +82,15 @@ export default function PrivacyPolicy() {
             </div>
           </section>
 
-
           {/* 3. How We Use Your Information */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               3. How We Use Your Information
             </h2>
             <p className="text-gray-400 leading-relaxed mb-4">
               We use the collected information for the following purposes:
             </p>
-            <ul className="text-gray-400 space-y-2 pl-6">
+            <ul className="text-gray-400 space-y-2 ml-6">
               <li>• To provide, maintain, and improve our educational services</li>
               <li>• To personalize your learning experience and track your progress</li>
               <li>• To communicate with you about updates, features, and support</li>
@@ -100,58 +100,54 @@ export default function PrivacyPolicy() {
             </ul>
           </section>
 
-
           {/* 4. Data Sharing */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               4. Data Sharing & Third Parties
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-4">
+            <p className="text-gray-400 leading-relaxed mb-6">
               We may share your information with trusted third-party service providers:
             </p>
-            <div className="overflow-x-auto mb-4">
-              <table className="w-full text-left">
-                <thead>
-                  <tr className="border-b border-white/10">
-                    <th className="py-3 pr-8 text-white font-medium">Service</th>
-                    <th className="py-3 text-white font-medium">Purpose</th>
-                  </tr>
-                </thead>
-                <tbody className="text-gray-400">
-                  <tr className="border-b border-white/5">
-                    <td className="py-3 pr-8">Firebase</td>
-                    <td className="py-3">Authentication & database</td>
-                  </tr>
-                  <tr className="border-b border-white/5">
-                    <td className="py-3 pr-8">Google Analytics</td>
-                    <td className="py-3">Usage analytics</td>
-                  </tr>
-                  <tr className="border-b border-white/5">
-                    <td className="py-3 pr-8">RevenueCat</td>
-                    <td className="py-3">Subscription management</td>
-                  </tr>
-                  <tr>
-                    <td className="py-3 pr-8">Crashlytics</td>
-                    <td className="py-3">Crash reporting</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <table className="w-full mb-4">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="text-left py-3 pr-8 text-white font-medium">Service</th>
+                  <th className="text-left py-3 text-white font-medium">Purpose</th>
+                </tr>
+              </thead>
+              <tbody className="text-gray-400">
+                <tr className="border-b border-white/5">
+                  <td className="py-3 pr-8">Firebase</td>
+                  <td className="py-3">Authentication & database</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 pr-8">Google Analytics</td>
+                  <td className="py-3">Usage analytics</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-3 pr-8">RevenueCat</td>
+                  <td className="py-3">Subscription management</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-8">Crashlytics</td>
+                  <td className="py-3">Crash reporting</td>
+                </tr>
+              </tbody>
+            </table>
             <p className="text-gray-500 text-sm">
               We do not sell your personal information to third parties. Data is only shared as necessary to provide our services.
             </p>
           </section>
 
-
           {/* 5. Data Security */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               5. Data Security
             </h2>
             <p className="text-gray-400 leading-relaxed mb-4">
               We implement industry-standard security measures to protect your personal information:
             </p>
-            <ul className="text-gray-400 space-y-2 pl-6 mb-4">
+            <ul className="text-gray-400 space-y-2 ml-6 mb-6">
               <li>• SSL/TLS encryption for all data transmission</li>
               <li>• Secure cloud infrastructure with regular backups</li>
               <li>• Access controls and authentication protocols</li>
@@ -162,34 +158,32 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-
           {/* 6. Children's Privacy */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               6. Children&apos;s Privacy
             </h2>
-            <div className="bg-amber-500/10 border-l-4 border-amber-500 p-4 mb-4">
+            <div className="bg-amber-500/10 border-l-4 border-amber-500 p-4 mb-6">
               <p className="text-amber-200">
                 <strong>Important:</strong> Science Bites is designed for children and families. We take children&apos;s privacy seriously.
               </p>
             </div>
-            <ul className="text-gray-400 space-y-2 pl-6">
+            <ul className="text-gray-400 space-y-2 ml-6">
               <li>• We do not knowingly collect personal information from children under 13 without parental consent.</li>
               <li>• Parents can review, modify, or request deletion of their child&apos;s data at any time.</li>
               <li>• We comply with COPPA (Children&apos;s Online Privacy Protection Act) requirements.</li>
             </ul>
           </section>
 
-
           {/* 7. Your Rights */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               7. Your Rights
             </h2>
             <p className="text-gray-400 leading-relaxed mb-4">
               You have the following rights regarding your personal data:
             </p>
-            <ul className="text-gray-400 space-y-2 pl-6">
+            <ul className="text-gray-400 space-y-2 ml-6">
               <li>• <strong className="text-white">Access:</strong> Request a copy of your personal data</li>
               <li>• <strong className="text-white">Correction:</strong> Update or correct inaccurate information</li>
               <li>• <strong className="text-white">Deletion:</strong> Request deletion of your data</li>
@@ -199,13 +193,12 @@ export default function PrivacyPolicy() {
             </ul>
           </section>
 
-
           {/* 8. Cookies */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               8. Cookies & Tracking
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-3">
+            <p className="text-gray-400 leading-relaxed mb-4">
               Our website uses cookies and similar tracking technologies to enhance your experience. Cookies are small text files stored on your device that help us understand how you use our services.
             </p>
             <p className="text-gray-400 leading-relaxed">
@@ -213,13 +206,12 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-
           {/* 9. Policy Changes */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               9. Policy Changes
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-3">
+            <p className="text-gray-400 leading-relaxed mb-4">
               We may update this Privacy Policy from time to time. We will notify you of any significant changes through in-app notifications or email.
             </p>
             <p className="text-gray-400 leading-relaxed">
@@ -227,9 +219,8 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-
           {/* 10. Contact */}
-          <section className="mb-16">
+          <section>
             <h2 className="text-xl font-semibold text-white mb-4">
               10. Contact Us
             </h2>
@@ -249,7 +240,7 @@ export default function PrivacyPolicy() {
 
       {/* Footer */}
       <footer className="border-t border-white/10">
-        <div className="max-w-3xl mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="max-w-2xl mx-auto px-8 py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
             © {new Date().getFullYear()} Science Bites. All rights reserved.
           </p>
