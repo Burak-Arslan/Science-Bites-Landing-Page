@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Source_Sans_3 } from "next/font/google";
+import { Londrina_Solid, Inter } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const londrina = Londrina_Solid({
+  variable: "--font-londrina",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400"],
 });
 
-const sourceSans = Source_Sans_3({
-  variable: "--font-source-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["300", "400", "600"],
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
-  title: "Science Bites - Bilimi Keşfet",
-  description: "Science Bites ile bilimi eğlenceli ve kolay bir şekilde keşfedin. Yakında sizlerle!",
-  keywords: ["science", "bilim", "eğitim", "science bites"],
+  title: "Science Bites - Learn Science with Fun",
+  description: "Learn science with fun experiments and animations! Science Bites makes learning exciting for kids.",
+  keywords: ["science", "kids", "education", "experiments", "animations", "science bites"],
   authors: [{ name: "Science Bites" }],
   icons: {
     icon: [
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Science Bites - Bilimi Keşfet",
-    description: "Science Bites ile bilimi eğlenceli ve kolay bir şekilde keşfedin.",
+    title: "Science Bites - Learn Science with Fun",
+    description: "Learn science with fun experiments and animations!",
     type: "website",
     images: ["/icon-512.png"],
   },
@@ -40,9 +40,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr">
+    <html lang="en">
       <body
-        className={`${playfair.variable} ${sourceSans.variable} antialiased`}
+        className={`${londrina.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>
